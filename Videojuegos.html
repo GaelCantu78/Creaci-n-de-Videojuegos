@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Index</title>
+    <style>
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 2rem; }
+        header { margin-bottom: 1rem; }
+        button { padding: 0.5rem 0.75rem; }
+        pre { background:#f5f5f5; padding:0.5rem; border-radius:4px; margin-top:1rem; }
+    </style>
+</head>
+<body>
+    <header><h1>Index</h1></header>
+
+    <main>
+        <p id="greeting">Hello, world!</p>
+        <button id="timeBtn">Show current time</button>
+        <pre id="output" aria-live="""polite"></pr
+    </main>
+
+    <script>
+        // Minimal interaction example
+        document.getElementById('timeBtn').addEventListener('click', () => {
+            document.getElementById('output').textContent = new Date().toString();
+        });
+    </script>
+</body>
+</html>e>
